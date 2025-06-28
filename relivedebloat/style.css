@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #232323;
+    font-family: "Noto Sans", Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+.nav-link {
+    text-decoration: none;
+    position: relative;
+    top: -10px;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.nav {
+    background-color: rgb(26, 25, 25);
+}
+
+.banner {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    background-image: linear-gradient(#00b4fb, #0748c0);
+    margin-top: -60px;
+    height: 300px;
+}
+
+.pobierz-button {
+    background-color: green;
+    border-color: green;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    margin-top: -150px;
+}
+
+.about-button {
+    background-color: rgb(50, 50, 240);
+    border-color: rgb(50, 50, 240);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    margin-top: -150px;
+}
+
+#oprojekcie {
+    color: white;
+    margin-left: 20px;
+}
+
+#poradniki, #faq, #credits {
+    margin-left: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+li {
+    font-weight: bold;
+}
