@@ -1,83 +1,148 @@
-<html lang="PL">
-    <head>
-        <meta charset="UTF-8">
-        <title>Relive Debloat</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-        <link rel="icon" href="favicon.ico" type="image/x-icon">
-        <link rel="stylesheet" href="style.css">
-        <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-        <script>
-        AOS.init();
-        </script>
-        <script src="script.js"></script>
-		<div style="background-color:red;padding:10px;text-align:center;color:white;"><b>UWAGA!</b> Zalecamy instalacje na świeżym windowsie z wyłączonym antywirusem (po instalacji można włączyć)</div>
-        <div class="nav" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200">
-            <a href="/"><img src="https://reliveteam.eu/images/logo-relive.png" width="32"></a>
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relive Debloat - Optymalizacja Windows 10/11</title>
+    <meta name="description" content="Relive Debloat to narzędzie do optymalizacji systemu Windows 10 i 11. Usuń zbędne aplikacje, wyłącz telemetrię i przyspiesz system w 2 kliknięcia!">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="alert" data-aos="fade-down">
+        <i class="fas fa-exclamation-triangle"></i>
+        <b>UWAGA!</b> Przed instalacją sprawdź <a href="https://reliveteam.eu/relivedebloat/#readme">README</a>
+		</div>
+
+    <nav class="nav">
+        <a href="/" class="nav-logo">
+            <img src="https://reliveteam.eu/images/logo-relive.png" alt="Relive Logo" width="32">
+        </a>
+        <div class="nav-links">
             <a class="nav-link" href="#">Relive Debloat</a>
-            <a class="nav-link" href="https://github.com/Relive-Team/relivedebloat/releases">Pobierz</a>
-            <a class="nav-link" href="https://reliveteam.eu/relivedebloat/#poradniki">Poradniki</a>
-            <a class="nav-link" href="https://reliveteam.eu/relivedebloat/#faq">FAQ</a>
-            <a class="nav-link" href="https://reliveteam.eu/relivedebloat/#readme">README</a>
-            <a class="nav-link" href="https://reliveteam.eu/relivedebloat/#credits">Credits</a>
+            <a class="nav-link" href="https://github.com/Relive-Team/relivedebloat/releases">
+                <i class="fas fa-download"></i> Pobierz
+            </a>
+            <a class="nav-link" href="#poradniki">
+                <i class="fas fa-book"></i> Poradniki
+            </a>
+            <a class="nav-link" href="#faq">
+                <i class="fas fa-question-circle"></i> FAQ
+            </a>
+            <a class="nav-link" href="#credits">
+                <i class="fas fa-heart"></i> Credits
+            </a>
         </div>
-        <div class="banner">
-            <div class="banner-content">
-                <h2 style="padding:50px;" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">Relive Debloat</h2>
-                 <a href="https://github.com/Relive-Team/relivedebloat/releases"><button class="pobierz-button" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Pobierz</button></a>
-                 <a href="#oprojekcie"><button class="about-button" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">O projekcie</button></a>
+    </nav>
+
+    <section class="banner">
+        <div class="banner-content">
+            <h1 data-aos="fade-up">Relive Debloat</h1>
+            <p data-aos="fade-up" data-aos-delay="200">
+                Optymalizacja Windows w 2 kliknięcia!
+            </p>
+            <div class="banner-buttons" data-aos="fade-up" data-aos-delay="400">
+                <a href="https://github.com/Relive-Team/relivedebloat/releases" class="pobierz-button">
+                    <i class="fas fa-download"></i> Pobierz teraz
+                </a>
+                <a href="#features" class="about-button">
+                    <i class="fas fa-info-circle"></i> Dowiedz się więcej
+                </a>
             </div>
         </div>
-        <div id="oprojekcie">
-            <h1 style="font-size:40px;" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">O Relive Debloat</h1>
-            <p data-aos="zoom-out-right" data-aos-duration="1000" data-aos-delay="200">Relive Debloat to narzędzie do usuwania zbędnych aplikacji i funkcji z Windows 10 i 11, poprawiające wydajność systemu. Umożliwia wyłączanie telemetrii,<br> usuwanie preinstalowanych programów oraz personalizację systemu. Przyjazne dla laików – 2 kliknięcia i gotowe!</p>
-            <img src="https://reliveteam.eu/relivedebloat/przedipo.png" width="900" data-aos="fade-up-right" data-aos-duration="1000" data-aos-delay="200">
+    </section>
+
+    <section id="features">
+        <h2 data-aos="fade-up">Główne funkcje</h2>
+        <div class="features-grid">
+            <div class="feature-card" data-aos="fade-up">
+                <i class="fas fa-rocket"></i>
+                <h3>Wyższa wydajność</h3>
+                <p>Usuń zbędne procesy i aplikacje spowalniające system</p>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Lepsza prywatność</h3>
+                <p>Wyłącz telemetrię i zbieranie danych przez Windows</p>
+            </div>
+            <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                <i class="fas fa-magic"></i>
+                <h3>Prostota użycia</h3>
+                <p>Dwa kliknięcia wystarczą - nie potrzebujesz wiedzy technicznej</p>
+            </div>
         </div>
-        <hr data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-        <div id="poradniki">
-            <h3 data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">Poradniki</h3>
-            <ul>
-                <li data-aos="zoom-out-right" data-aos-duration="1000" data-aos-delay="200">Jak wyłączyć antywirusa?</li>
-            </ul>
-            <video controls="" width="500" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-				<source src="https://reliveteam.eu/relivedebloat/wylaczenie%20antywirus.mp4" type="video/mp4">
-				Twoja przeglądarka nie obsługuje wideo.
-	    </video>
+    </section>
+
+    <section id="poradniki">
+        <h2 data-aos="fade-up">Poradniki</h2>
+        <div class="tutorial-card" data-aos="fade-up">
+            <div class="tutorial-content">
+                <h3><i class="fas fa-shield-alt"></i> Jak wyłączyć antywirusa?</h3>
+                <video controls width="100%">
+                    <source src="https://reliveteam.eu/relivedebloat/wylaczenie%20antywirus.mp4" type="video/mp4">
+                    Twoja przeglądarka nie obsługuje wideo.
+                </video>
+            </div>
         </div>
-        <hr data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-        <div id="faq">
-            <h3 data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">FAQ - Najczęstsze pytania</h3>
-            <ol data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                <li>Czy Relive Debloat działa na Windows 11?</li>
-                <a style="margin-left:10px;list-style-type:none;">Tak, program wspiera zarówno Windows 10 jak i 11.</a>
-                <li start="2">Czy muszę znać się na komputerach?</li>
-                <a style="margin-left:10px;list-style-type:none;">Nie! Program jest prosty – wystarczą dwa kliknięcia.</a>
-                <li>Czy można to odinstalować?</li>
-                <a style="margin-left:10px;list-style-type:none;">Niektóre zmiany są trwałe. Przed użyciem warto zrobić punkt przywracania systemu.</a>
-            </ol>
+    </section>
+
+    <section id="faq">
+        <h2 data-aos="fade-up">Często zadawane pytania</h2>
+        <div class="faq-container">
+            <div class="faq-item" data-aos="fade-up">
+                <div class="faq-question">
+                    Czy Relive Debloat działa na Windows 11?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    Tak, program wspiera zarówno Windows 10 jak i Windows 11.
+                </div>
+            </div>
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="faq-question">
+                    Czy muszę znać się na komputerach?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    Nie! Program jest zaprojektowany tak, aby był prosty w użyciu - wystarczą dwa kliknięcia.
+                </div>
+            </div>
+            <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="faq-question">
+                    Czy można cofnąć zmiany?
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    Niektóre zmiany są trwałe. Dlatego zalecamy utworzenie punktu przywracania systemu przed użyciem programu.
+                </div>
+            </div>
         </div>
-        <hr data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-        <div id="readme">
-            <h3 data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">README</h3>
-            <ul data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
-                <li>Uruchamiaj ten program tylko na świeżym Windowsie</li>
-                <li>Wyłącz antywirusa (po instalacji możesz go włączyć)</li>
-            </ul>
+    </section>
+
+    <section id="credits">
+        <h2 data-aos="fade-up">Podziękowania</h2>
+        <div class="credits-grid" data-aos="fade-up" data-aos-delay="200">
+            <div class="credit-item">
+                <i class="fas fa-star"></i>
+                <p>Chris Titus Tech za CCT WinUtil</p>
+            </div>
+            <div class="credit-item">
+                <i class="fas fa-star"></i>
+                <p>ShadowWhisperer za Remove-MS-Edge</p>
+            </div>
+            <div class="credit-item">
+                <i class="fas fa-star"></i>
+                <p>Raphire za Win11Debloat</p>
+            </div>
         </div>
-        <hr data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-        <div id="credits">
-            <h3 data-aos="flip-left" data-aos-duration="1000" data-aos-delay="200">Credits</h3>
-            <ul data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
-                <li>Chris Titus Tech za CCT WinUtil</li>
-                <li>he3als za EdgeRemover </li>
-				<li>Raphire za Win11Debloat</li>
-            </ul>
-        </div>
-        <br><br><br><br><br>
-    </body>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
